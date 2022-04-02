@@ -22,39 +22,39 @@ const NavPanel = () => {
                     Brain Director
                 </p>
             </div>
-            <Hline/>
+            <Hline width={88}/>
             <ul className="nav__links">
                 <li className="nav__link">
                     <img src={dashboard} alt="Dashboard"/>
-                    Dashboard
+                    <span>Dashboard</span>
                 </li>
                 <li className="nav__link">
                     <img src={people} alt="People"/>
-                    Users
+                    <span>Users</span>
                 </li>
                 <li className="nav__link">
                     <img src={basket} alt="Basket"/>
-                    Products
+                    <span>Products</span>
                 </li>
                 <li className="nav__link">
                     <img src={lock} alt="Lock"/>
-                    Authentication
+                    <span>Authentication</span>
                 </li>
                 <li className="nav__link">
                     <img src={textFields} alt="Text"/>
-                    Typography
+                    <span>Typography</span>
                 </li>
                 <li className="nav__link">
                     <img src={photo} alt="Icons"/>
-                    Icons & Images
+                    <span>Icons & Images</span>
                 </li>
             </ul>
-            <Hline/>
+            <Hline width={88}/>
             <div className="nav__support">
                 <p className="support__title">Support</p>
                 <div className="nav__link support__link">
                     <img src={support} alt="Support"/>
-                    Support
+                    <span>Support</span>
                 </div>
             </div>
         </nav>
