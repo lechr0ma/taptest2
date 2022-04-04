@@ -1,0 +1,110 @@
+@import "vars";
+
+.nav{
+  &__title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0;
+    @media screen and (max-width: 1070px){
+      display: none;
+    }
+  }
+  &__links{
+    list-style-type: none;
+    padding: 0 0 27px 32px;
+    @media screen and (max-width: 1070px){
+      padding: 0 0 27px 8px;
+    }
+  }
+  &__support{
+    padding: 24px 0 27px 32px;
+    @media screen and (max-width: 1070px){
+      padding: 0 0 27px 8px;
+    }
+  }
+  &__burger{
+    @media screen and (max-width: 768px) {
+      position: fixed;
+      z-index: 5;
+      width: 40px;
+      height: 40px;
+      background-color: #FFFFFF;
+      border-radius: 50%;
+      border: 1px $lightgray solid;
+      right: 10px;
+      top: 100px;
+      cursor: pointer;
+      &:before, &:after, span {
+        content: '';
+        display: block;
+        width: 60%;
+        height: 2px;
+        border-radius: 10px;
+        background-color: $mainBlue;
+        position: absolute;
+        left: 20%;
+        pointer-events: none;
+        transition: all .2s;
+      }
+      &:before {
+        top: 30%;
+      }
+      &:after {
+        bottom: 30%;
+      }
+      & span {
+        top: 48%;
+      }
+      &.active{
+        & span{
+          display: none;
+        }
+        &:before{
+          transform: rotateZ(45deg);
+          top: 48%;
+        }
+        &:after{
+          transform: rotateZ(-45deg);
+          bottom: 48%;
+        }
+      }
+    }
+  }
+}
+.title{
+  &__image{
+    width: 100px;
+    height: 100px;
+  }
+  &__name{
+    color: $dark;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.05px;
+    margin-top: 16px;
+  }
+  &__position{
+    color: $lightgray;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 4px;
+  }
+}
+.support{
+  &__title{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.328974);
+    margin-bottom: -10px;
+    @media screen and (max-width: 1070px){
+      display: none;
+    }
+  }
+  &__link{
+    margin-top: 20px;
+  }
+}

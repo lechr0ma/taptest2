@@ -1,0 +1,169 @@
+@import "vars";
+
+.content{
+  &__links{
+    position: relative;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    margin: 0 40px;
+    height: 57px;
+    width: calc(100% - 48px);
+    @media screen and (max-width: 768px){
+      margin: 0 24px;
+    }
+  }
+  &__button{
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.05px;
+    color: $dark;
+  }
+  &__profile{
+    display: flex;
+    padding: 24px;
+    @media screen and (max-width: 826px){
+      flex-direction: column;
+    }
+  }
+}
+.profile{
+  &__left{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 249px;
+    background-color: #ffffff;
+    border: 1px solid rgba(63, 63, 68, 0.005);
+    box-shadow: 0px 1px 3px rgba(63, 63, 68, 0.15);
+    border-radius: 4px;
+    @media screen and (max-width: 826px){
+      width: 100%;
+    }
+    @media screen and (max-width: 768px){
+      height: auto;
+    }
+  }
+  &__info{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    @media screen and (max-width: 768px){
+      padding: 10px;
+      & img{
+        height: 100%;
+      }
+    }
+  }
+  &__title{
+    display: flex;
+    flex-direction: column;
+  }
+  &__buttons{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 24px;
+    @media screen and (max-width: 768px){
+      padding: 10px 0;
+    }
+  }
+  &__upload, &__remove{
+    width: 147px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: rgba(98, 2, 238, 0.0001);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  &__upload{
+    & input{
+      display: none;
+    }
+    color: $mainBlue;
+  }
+  &__remove{
+    color: #425A70 ;
+  }
+  &__name{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.06px;
+    color: $dark;
+    margin-bottom: 10px;
+  }
+  &__location, &__time{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.05px;
+    color: $lightgray;
+  }
+  &__right{
+    max-width: 910px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 28px;
+    @media screen and (max-width: 826px){
+      margin: 28px 0 0 0 ;
+      width: 100%;
+    }
+  }
+}
+.basic{
+  &__inputs{
+    padding: 21px 0 13px 12px;
+  }
+  &__save{
+    padding: 24px;
+    @media screen and (max-width: 768px){
+      padding: 24px 10px;
+    }
+  }
+}
+.notifications{
+  &__inputs{
+    display: flex;
+    padding: 24px;
+    @media screen and (max-width: 826px){
+      width: 100%;
+    }
+    @media screen and (max-width: 768px){
+      padding: 24px 10px;
+    }
+  }
+  &__notifications, &__messages{
+    display: flex;
+    flex-direction: column;
+  }
+  &__messages{
+    margin-left: 85px;
+    @media screen and (max-width: 826px){
+      margin-left: 25px;
+    }
+  }
+  &__title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.05px;
+    color: $dark;
+    margin-bottom: 24px;
+  }
+}

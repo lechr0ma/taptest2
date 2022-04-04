@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageButton from "./ImageButton";
+import ImageButton from "./UI/button/ImageButton";
 import logo from '../images/header/logo.svg'
 import alarm from '../images/header/outline-notifications-24px.svg'
 import logOut from '../images/header/outline-exit_to_app-24px.svg'
